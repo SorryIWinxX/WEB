@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mercedes Benz</title>
+</head>
+<body>
+    <script src="app.js"></script>
+    <div class="container">
+        <div class="row ">
+            <div class="col bg">
+            </div>
+            <div class="col">
+                <div class="text-end">
+                    <img src="mercedes-benz-logo.png" ali width="100">
+                </div>
+                <h2 class="fw-bold py-5 text-center">Mercedes Benz</h2>
+
+            <!-- Login -->
+
+            <form action="#">
+                <div class="mb-4">
+                    <label for="brand" class="form-label">Brand</label>
+                    <select name="brand" class="form-control">
+                        <option value="value1">Mercedes-Benz</option>
+                        <option value="value2">Mercedes-Benz AMG</option>
+                      </select>
+                </div>
+                <div class="mb-4">
+                    <label for="model" class="form-label">Model</label>
+                    <select name="datas" id="datas" class="form-control"></select>
+                    <script>
+
+                                html = "";
+                                obj = {"brand": "Mercedes-Benz", 
+                                    "models": ["100 D", "115", "124", "126", "190", 
+                                    "190 D", "190 E", "200 - 300", "200 D", 
+                                    "200 E", "210 Van", "210 kombi", "310 Van", 
+                                    "310 kombi", "230 - 300 CE Coupé", "260 - 560 SE", 
+                                    "260 - 560 SEL", "500 - 600 SEC Coupé", "Trieda A", "A", 
+                                    "A L", "AMG GT", "Trieda B", "Trieda C", "C", 
+                                    "C Sportcoupé", "C T", "Citan", "CL", "CL", "CLA", "CLC", "CLK Cabrio", 
+                                    "CLK Coupé", "CLS", "Trieda E", "E", "E Cabrio", "E Coupé", "E T", "Trieda G", "G Cabrio", "GL", "GLA", "GLC", "GLE", "GLK", "Trieda M", "MB 100", "Trieda R", "Trieda S", "S", "S Coupé", "SL", "SLC", "SLK", "SLR", 
+                                    "Sprinter"]}
+
+                                        for(var key in obj.models) {
+                                            html += "<option value=" + key  + ">" +obj.models[key] + "</option>"
+                                            }
+                                            document.getElementById("datas").innerHTML = html;
+
+                    </script>    
+                </div>
+                <div class="mb-4">
+                    <label for="year" class="form-label">Year</label>
+                    <input type="number" class="form-control" min="1900" max="2099" name="year"/>
+                </div>
+                <div class="mb-4">
+                    <label for="detail" class="form-label">Details</label>
+                    <textarea name="Text1" class="form-control" cols="40" rows="5"></textarea>
+                </div>
+
+                <div class="mb-4">
+                    <label for="engine" class="form-label">Engine</label>
+                    <input type="float" class="form-control" name="engine">
+                </div>
+                <div class="mb-4">
+                    <label for="transmission" class="form-label">Transmission</label>
+                    <select name="transmission" class="form-control">
+                        <option value="value1">Manual</option>
+                        <option value="value2">Automatic</option>
+                      </select>
+                </div>
+                <div class="mb-4">
+                    <label for="date" class="form-label">Date</label>
+                    <input type="date" class="form-control" name="date">
+                </div>
+                <div class="mb-4">
+                    <label for="value" class="value">Value</label>
+                    <input type="number" min="0" class="form-control" name="value">
+                </div>
+
+                <div class="mb-4">
+                    <label for="currency" class="form-label">Currency</label>
+                    <select name="transmission" class="form-control">
+                        <option value="value1">USD</option>
+                        <option value="value2">COP</option>
+                      </select>
+                </div>
+                <div class="mb-4">
+                    <input type="checkbox" name="sure" class="form-check-input">
+                    <label for="sure" class="form-check-label">Are you sure?</label>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary"> Send</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
