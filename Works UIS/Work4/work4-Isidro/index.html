@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/1c47b1910c.js" crossorigin="anonymous"></script>
     <title>Login Bootstrap</title>
 </head>
 <body>
@@ -22,17 +23,23 @@
 
             <!-- Login -->
 
-            <form action="#" class="form-horizontal" role="form">
+            <form action="#" class="form-horizontal" role="form" id="form">
 
                 <div class="input-group">
-                     <div class="form-group" style="margin-left: 30px">
+                     <div class="form-control" style="margin-left: 30px">
                         <label for="name" class="form-label">Name</label>
-                        <input type="name" class="form-control" name="name">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <input type="name" class="form-control" id="name">
+                        <small>Error message</small>
                     </div>
-                     <div class="form-group"style="margin-left: 40px">
+                     <div class="form-control"style="margin-left: 40px">
                         <label for="Lastname" class="form-label">Last name</label>
-                        <input type="Lastame" class="form-control" name="Lastname">
-                     </div>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <input type="Lastame" class="form-control" id="lastname">
+                        <small>Error message</small>
+                    </div>
                 </div>
                 <br>
 
@@ -47,11 +54,17 @@
                 <div class="input-group">
                     <div class="form-group"style="margin-left: 30px">
                         <label for="Address" class="form-label">Address</label>
-                        <input type="Address" class="form-control" name="Address">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <input type="Address" class="form-control" id="address">
+                        <small>Error message</small>
                     </div>
                     <div class="form-group"style="margin-left: 50px">
-                        <label for="username" class="form-label">User Name</label>
-                        <input type="username" class="form-control" name="username">
+                        <label for="id" class="form-label">ID</label>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <input type="number" class="form-control" id="id">
+                        <small>Error message</small>
                     </div>
                </div>
 
@@ -64,7 +77,10 @@
                     </div>
                      <div class="form-group"style="margin-left: 50px">
                         <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control" name="password">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <input type="password" class="form-control" id="password">
+                        <small>Error message</small>
                     </div>               
                 </div>
                 
@@ -73,7 +89,10 @@
                 <div class="input-group">
                     <div class="form-group"style="margin-left: 30px">
                         <label for="phone" class="form-label">Phone number</label>
-                        <input type="number" class="form-control" name="phone">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <input type="number" class="form-control" id="phone">
+                        <small>Error message</small>
                     </div>
                 </div>
 

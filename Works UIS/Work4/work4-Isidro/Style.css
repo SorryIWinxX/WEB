@@ -4,6 +4,36 @@
   background-position: center center;
 }
 
+.form-control.success input{
+  border-color: #2ecc71;
+}
+
+.form-control i{
+  position: absolute;
+  visibility: hidden;
+}
+
+.form-control.error input{
+  border-color: #e74c3c;
+}
+
+.form-control.success i.fa-check-circle{
+  border-color: #2ecc71;
+  visibility: visible;
+  color: #2ecc71;
+}
+
+.form-control.error i.fa-exclamation-circle{
+  border-color: #e74c3c;
+  visibility: visible;
+  color: #e74c3c;
+}
+
+.form-control small{
+  visibility:hidden;
+  position: absolute;
+}
+
 .text-end{
   position: absolute;
   top: 35%;
