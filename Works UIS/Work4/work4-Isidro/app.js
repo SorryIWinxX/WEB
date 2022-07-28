@@ -367,3 +367,57 @@ function validatePassword() {
 
 
 }
+
+function validateEmail() {
+
+    
+    var email = document.getElementById('email').value; //value of input
+    var email1 = document.getElementById('email'); // All element of input
+    var emailControl= email1.parentNode; // Node father to element
+    var strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{15,})");
+
+
+    // least 1 character entered
+
+    if (email.length == 0 ) {
+        
+        
+        var small = emailControl.querySelector('small');
+        small.innerHTML = 'Email is required'
+        emailControl.className ='form-control error';
+
+
+        return false;
+    }
+
+
+  
+
+    if (email.length <= 10) {
+
+        var small = emailControl.querySelector('small');
+        small.innerHTML = 'Write your Email'
+        emailControl.className ='form-control error';
+
+        return false;
+    }
+
+    // Less than 25 characters
+
+    if (email.length >= 120) {
+
+        var small = emailControl.querySelector('small');
+        small.innerHTML = 'Limit 120 characters'
+        emailControl.className ='form-control error';
+
+        return false;
+    }
+    
+
+    // input validate
+
+    emailControl.className = 'form-control success';
+    return true;
+
+
+}

@@ -71,9 +71,12 @@
                <br>
                
                 <div class="input-group">
-                    <div class="form-group"style="margin-left: 30px">
+                    <div class="form-control"style="margin-left: 30px">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" name="email">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <input type="email" class="form-control" name="email" id="email" onkeyup="validateEmail()">
+                        <small id="email">Error message</small>
                     </div>
                      <div class="form-control"style="margin-left: 50px">
                         <label for="password" class="form-label">Password</label>
@@ -87,12 +90,9 @@
                 <br>
                 
                 <div class="input-group">
-                    <div class="form-group"style="margin-left: 30px">
+                    <div class="form-control"style="margin-left: 30px">
                         <label for="phone" class="form-label">Phone number</label>
-                        <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
                         <input type="number" class="form-control" id="phone">
-                        <small id="phone-error">Error message</small>
                     </div>
                 </div>
 
