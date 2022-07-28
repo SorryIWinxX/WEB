@@ -1,4 +1,15 @@
 @charset "UTF-8";
+
+
+.input-group span{
+  position: absolute;
+  color: red;
+  font-size: 14px;
+}
+
+
+
+
 .bg{
   background-image: url(jJGfFTNKYYYwSb3GHxxHVgwWg8g.jpg);
   background-position: center center;
@@ -32,6 +43,10 @@
 .form-control small{
   visibility:hidden;
   position: absolute;
+}
+.form-control.error small{
+  visibility: visible;
+  color: #e74c3c;
 }
 
 .text-end{

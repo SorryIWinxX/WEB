@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+`<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,15 +30,15 @@
                         <label for="name" class="form-label">Name</label>
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
-                        <input type="name" class="form-control" id="name">
-                        <small>Error message</small>
+                        <input type="name" class="form-control" id="name1" onkeyup="validateName()">
+                        <small id="name-error"></small>
                     </div>
                      <div class="form-control"style="margin-left: 40px">
                         <label for="Lastname" class="form-label">Last name</label>
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
-                        <input type="Lastame" class="form-control" id="lastname">
-                        <small>Error message</small>
+                        <input type="Lastame" class="form-control" id="lastname" onkeyup="validateLastName()">
+                        <small id="lastname-error"></small>
                     </div>
                 </div>
                 <br>
@@ -52,19 +52,19 @@
                 <br>
                 
                 <div class="input-group">
-                    <div class="form-group"style="margin-left: 30px">
+                    <div class="form-control"style="margin-left: 30px">
                         <label for="Address" class="form-label">Address</label>
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
-                        <input type="Address" class="form-control" id="address">
-                        <small>Error message</small>
+                        <input type="Address" class="form-control" id="address" onkeyup="validateAddress()">
+                        <small id="adress-error">Error message</small>
                     </div>
-                    <div class="form-group"style="margin-left: 50px">
+                    <div class="form-control"style="margin-left: 50px">
                         <label for="id" class="form-label">ID</label>
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
-                        <input type="number" class="form-control" id="id">
-                        <small>Error message</small>
+                        <input type="number" class="form-control" id="idConfig" onkeyup="validateID()">
+                        <small id="id-error">Error message</small>
                     </div>
                </div>
 
@@ -75,12 +75,12 @@
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" name="email">
                     </div>
-                     <div class="form-group"style="margin-left: 50px">
+                     <div class="form-control"style="margin-left: 50px">
                         <label for="password" class="form-label">Password</label>
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
-                        <input type="password" class="form-control" id="password">
-                        <small>Error message</small>
+                        <input type="password" class="form-control" id="password" onkeyup="validatePassword()">
+                        <small id="password-error">Error message</small>
                     </div>               
                 </div>
                 
@@ -92,7 +92,7 @@
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <input type="number" class="form-control" id="phone">
-                        <small>Error message</small>
+                        <small id="phone-error">Error message</small>
                     </div>
                 </div>
 
