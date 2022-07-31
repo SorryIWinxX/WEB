@@ -11,8 +11,10 @@
 
 
 .bg{
-  background-image: url(jJGfFTNKYYYwSb3GHxxHVgwWg8g.jpg);
+  background-image: url(wallpaperflare.com_wallpaper\ \(8\).jpg);
   background-position: center center;
+  height: auto;
+
 }
 
 .form-control.success input{
@@ -62,7 +64,7 @@
 
 body{
   background: red;
-  background: linear-gradient(to right, rgb(26, 26, 26), #101214 );
+  background: linear-gradient(to right,#d4d1ce,#97a0a7  );
 }
 
 h1, .h1 {
