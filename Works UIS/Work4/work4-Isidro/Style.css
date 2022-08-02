@@ -35,6 +35,7 @@
   visibility: visible;
   color: #2ecc71;
   margin-left: 5px;
+  margin-top: 2px;
 }
 
 .form-control.error i.fa-exclamation-circle{
@@ -42,6 +43,7 @@
   visibility: visible;
   color: #e74c3c;
   margin-left: 5px;
+  margin-top: 2px;
 }
 
 .form-control small{
