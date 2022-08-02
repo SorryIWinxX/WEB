@@ -34,12 +34,14 @@
   border-color: #2ecc71;
   visibility: visible;
   color: #2ecc71;
+  margin-left: 5px;
 }
 
 .form-control.error i.fa-exclamation-circle{
   border-color: #e74c3c;
   visibility: visible;
   color: #e74c3c;
+  margin-left: 5px;
 }
 
 .form-control small{
