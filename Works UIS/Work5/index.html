@@ -1,4 +1,4 @@
-`<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,13 +23,30 @@
 
             <!-- Login -->
 
+           
+                
+
             <form action="#" class="form-horizontal" role="form" id="form">
+
+
+                <ul class="step-wizard-list">
+                    <li class="step-wizard-item current-item">
+                        <span class="progress-count">1</span>
+                        <span class="progress-label">Register Checkout</span>
+                    </li>
+                    <li class="step-wizard-item">
+                        <span class="progress-count">2</span>
+                        <span class="progress-label">Medical Checkout</span>
+                    </li>
+                </ul>
+
+
 
                 <div class="input-group">
                      <div class="form-control" style="width: 10%">
                         <label for="name" class="form-label">Name</label>
                         <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-exclamation-circle/"></i>
                         <input type="name" class="form-control" id="name1" onkeyup="validateName()">
                         <small id="name-error"></small>
                     </div>
@@ -89,7 +106,7 @@
                     <label for="connected" class="form-check-label">Keep Session</label>
                 </div>
                     <div class="d-grid"style="">
-                    <button type="submit" class="btn btn-primary"> Log in</button>
+                    <button type="submit" class="btn btn-primary" id="nextButton"> Next</button>
                     </div>    
                 <div class="my-3" style="text-align: center">
                     <span>Dont have account? <a href="#"> Sign Up</a></span>

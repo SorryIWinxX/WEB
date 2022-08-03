@@ -421,3 +421,13 @@ function validateEmail() {
 
 
 }
+
+
+// Animations
+
+const nextButton = document.getElementById('nextButton');
+const checkCurrent = document.getElementsByClassName('step-wizard-item current-item');
+
+nextButton.onclick = (()=>{
+    
+})
