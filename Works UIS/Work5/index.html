@@ -1,0 +1,103 @@
+`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/1c47b1910c.js" crossorigin="anonymous"></script>
+    <title>Login Cars</title>
+</head>
+<body>
+    <script src="app.js"></script>
+    <div class="container">
+        <div class="row ">
+            <div class="col bg">
+
+            </div>
+            <div class="col">
+                <div class="text-end">
+                    <img src="pngwing.com.png" ali width="100">
+                </div>
+                <h2 class="fw-bold py-5 text-center">Bienvenido</h2>
+
+            <!-- Login -->
+
+            <form action="#" class="form-horizontal" role="form" id="form">
+
+                <div class="input-group">
+                     <div class="form-control" style="width: 10%">
+                        <label for="name" class="form-label">Name</label>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <input type="name" class="form-control" id="name1" onkeyup="validateName()">
+                        <small id="name-error"></small>
+                    </div>
+                     <div class="form-control"style="width: 10%">
+                        <label for="Lastname" class="form-label">Last name</label>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <input type="Lastame" class="form-control" id="lastname" onkeyup="validateLastName()">
+                        <small id="lastname-error"></small>
+                    </div>
+                </div>
+                <br>
+
+                <div class="form-control">
+                    <label for="date" class="form-label">Date of birth</label>
+                    <br>
+                    <input type="date" class="form-control" id="dateOfbirth">
+                </div>
+                
+                <br>
+                
+                <div class="input-group">
+                 
+                     <div class="form-control"style="width: 10%">
+                        <label for="email" class="form-label">Email</label>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <input type="email" class="form-control" name="email" id="email" onkeyup="validateEmail()">
+                        <small id="email">Error message</small>
+                     
+              </div>
+
+               <br>
+               
+                <div class="input-group">
+                   
+                     <div class="form-control"style="width: 10%">
+                        <label for="password" class="form-label">Password</label>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <input type="password" class="form-control" id="password" onkeyup="validatePassword()">
+                        <small id="password-error">Error message</small>
+                    </div> 
+                    <div class="form-control"style="width: 10%">
+                        <label for="re-password" class="form-label">Re Password</label>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <input type="re-password" class="form-control" id="re-password" onkeyup="validatePassword()">
+                        <small id="password-error">Error message</small>
+                    </div>                     
+                </div>
+                
+                
+                
+                <div class="form-group"style="">
+                    <input type="checkbox" name="connected" class="form-check-input">
+                    <label for="connected" class="form-check-label">Keep Session</label>
+                </div>
+                    <div class="d-grid"style="">
+                    <button type="submit" class="btn btn-primary"> Log in</button>
+                    </div>    
+                <div class="my-3" style="text-align: center">
+                    <span>Dont have account? <a href="#"> Sign Up</a></span>
+                </div>
+               
+               </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
